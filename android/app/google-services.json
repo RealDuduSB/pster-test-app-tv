@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "796660094509",
+    "project_id": "pster-7d618",
+    "storage_bucket": "pster-7d618.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796660094509:android:7fe79c99d621e49edbcaa4",
+        "android_client_info": {
+          "package_name": "com.company.pster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796660094509-brd5bao94et5u88tp98ka6q7n0v9kfl4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.company.pster",
+            "certificate_hash": "c2a010721fa4cf29be1f2b23605af4aa3cd55f7c"
+          }
+        },
+        {
+          "client_id": "796660094509-depu3s5c6csa5aq4ar7nrn1hi9d1civi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA4QLW2Y9n7SR264MN4dFWxX4CyqL1SkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796660094509-depu3s5c6csa5aq4ar7nrn1hi9d1civi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
