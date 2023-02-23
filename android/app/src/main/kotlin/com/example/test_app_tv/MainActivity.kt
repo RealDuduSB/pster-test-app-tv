@@ -1,4 +1,4 @@
-package com.example.test_app_tv
+package com.company.pster
 
 import io.flutter.embedding.android.FlutterActivity
 
