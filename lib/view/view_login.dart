@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:test_app_tv/view/view.dart';
 
 class ViewLogin extends StatefulWidget {
   const ViewLogin({Key? key}) : super(key: key);
@@ -78,10 +79,10 @@ class _ViewLoginState extends State<ViewLogin> {
   Widget withEmailPassword() {
     return Form(
       // key: _controller.formKey,
-      child: Container(
+      child: SizedBox(
         width: 350,
         child: Card(
-          color: Color.fromARGB(255, 240, 16, 0),
+          color: const Color.fromARGB(255, 240, 16, 0),
           elevation: 5,
           shadowColor: Colors.redAccent,
           child: Padding(
@@ -104,10 +105,11 @@ class _ViewLoginState extends State<ViewLogin> {
                       // controller: _controller.emailController,
                       decoration: InputDecoration(
                         labelText: "e-mail",
-                        labelStyle: TextStyle(color: Colors.black),
+                        labelStyle: const TextStyle(color: Colors.black),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide(color: Colors.red, width: 3.0),
+                          borderSide:
+                              const BorderSide(color: Colors.red, width: 3.0),
                         ),
                       ),
                       // validator: (String val) {
@@ -119,34 +121,33 @@ class _ViewLoginState extends State<ViewLogin> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
-                Container(
-                  child: TextFormField(
-                    obscureText: true,
-                    // controller: _controller.senhaController,
-                    decoration: InputDecoration(
-                      labelStyle: TextStyle(color: Colors.black),
-                      labelText: "Senha",
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Colors.red, width: 3.0),
-                      ),
+                TextFormField(
+                  obscureText: true,
+                  // controller: _controller.senhaController,
+                  decoration: InputDecoration(
+                    labelStyle: const TextStyle(color: Colors.black),
+                    labelText: "Senha",
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide:
+                          const BorderSide(color: Colors.red, width: 3.0),
                     ),
-                    //                 decoration: InputDecoration(
-                    //   enabledBorder: OutlineInputBorder(
-                    //     borderSide: BorderSide(
-                    //         width: 3, color: Colors.greenAccent), //<-- SEE HERE
-                    //   ),
-                    // ),
-                    // validator: (String val) {
-                    //   if (val.isEmpty) {
-                    //     return "Por favor informe a senha!";
-                    //   }
-                    //   return null;
-                    // },
                   ),
+                  //                 decoration: InputDecoration(
+                  //   enabledBorder: OutlineInputBorder(
+                  //     borderSide: BorderSide(
+                  //         width: 3, color: Colors.greenAccent), //<-- SEE HERE
+                  //   ),
+                  // ),
+                  // validator: (String val) {
+                  //   if (val.isEmpty) {
+                  //     return "Por favor informe a senha!";
+                  //   }
+                  //   return null;
+                  // },
                 ),
                 const SizedBox(
                   height: 15,
@@ -180,6 +181,11 @@ class _ViewLoginState extends State<ViewLogin> {
                           ),
                         ),
                         onPressed: () async {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const ViewHome()),
+                          );
                           // if (_controller.formKey.currentState.validate()) {
                           //   _signinWithEmailPassword();
                           // }

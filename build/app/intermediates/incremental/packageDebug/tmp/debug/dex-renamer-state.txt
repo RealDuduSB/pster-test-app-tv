@@ -1,4 +1,4 @@
-#Fri Feb 24 16:39:57 BRT 2023
+#Fri Feb 24 17:44:58 BRT 2023
 base.0=/Users/edusborges/Desenvolvimento/pster-test-app-tv/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

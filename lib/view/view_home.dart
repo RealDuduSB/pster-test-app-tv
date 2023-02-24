@@ -16,18 +16,50 @@ class _ViewHomeState extends State<ViewHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 209, 14, 0),
         title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [],
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Image.asset(
+              "assets/joaopster.jpeg",
+              width: 50,
+              height: 50,
+            ),
+          ],
         ),
         centerTitle: true,
       ),
-      drawer: const Drawer(),
-      body: Column(
-        children: [
-          Row(),
-        ],
-      ),
+      body: ListView(children: [
+        Column(
+          children: [
+            Text("FEATURED"),
+            SizedBox(
+              height: 150,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.blue,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Image.asset(
+                          "assets/praia.jpeg",
+                          width: 50,
+                          height: 50,
+                        ),
+                        Text("Tropical Beaches")
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ]),
     );
   }
 }
