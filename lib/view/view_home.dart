@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../components/component_button.dart';
-import '../components/component_container.dart';
 import '../widgets/widget_botton_navigation_bar.dart';
 
 class ViewHome extends StatefulWidget {
@@ -31,27 +29,504 @@ class _ViewHomeState extends State<ViewHome> {
       ),
       body: ListView(children: [
         Column(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Text("FEATURED"),
             SizedBox(
-              height: 150,
+              height: 15,
+            ),
+            const Align(
+              alignment: Alignment.bottomLeft,
+              child: Padding(
+                padding: EdgeInsets.only(right: 10, left: 10),
+                child: Text(
+                  "FEATURED",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 25),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            SizedBox(
+              height: 100,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
-                  Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.blue,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Image.asset(
-                          "assets/praia.jpeg",
-                          width: 50,
-                          height: 50,
+                  Padding(
+                    padding: EdgeInsets.only(right: 14, left: 14),
+                    child: Container(
+                      width: 150,
+                      decoration: BoxDecoration(
+                        color: const Color(0xff7c94b6),
+                        border: Border.all(
+                          width: 2,
                         ),
-                        Text("Tropical Beaches")
-                      ],
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/praia.jpeg",
+                            width: 100,
+                            height: 50,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(
+                            height: 6,
+                          ),
+                          Center(child: const Text("Tropical Beaches"))
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(right: 14, left: 14),
+                    child: Container(
+                      width: 150,
+                      decoration: BoxDecoration(
+                        color: const Color(0xff7c94b6),
+                        border: Border.all(
+                          width: 2,
+                        ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/linear perspective.jpeg",
+                            width: 100,
+                            height: 50,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(
+                            height: 6,
+                          ),
+                          Center(child: const Text("Linear Perpective"))
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(right: 14, left: 14),
+                    child: Container(
+                      width: 150,
+                      decoration: BoxDecoration(
+                        color: const Color(0xff7c94b6),
+                        border: Border.all(
+                          width: 2,
+                        ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/refractions.jpeg",
+                            width: 100,
+                            height: 50,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(
+                            height: 6,
+                          ),
+                          Center(child: const Text("Refractions"))
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(right: 14, left: 14),
+                    child: Container(
+                      width: 150,
+                      decoration: BoxDecoration(
+                        color: const Color(0xff7c94b6),
+                        border: Border.all(
+                          width: 2,
+                        ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/cristo redentor.jpeg",
+                            width: 100,
+                            height: 50,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(
+                            height: 6,
+                          ),
+                          Center(child: const Text("Tropical Beaches"))
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(right: 14, left: 14),
+                    child: Container(
+                      width: 150,
+                      decoration: BoxDecoration(
+                        color: const Color(0xff7c94b6),
+                        border: Border.all(
+                          width: 2,
+                        ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/us west.jpeg",
+                            width: 100,
+                            height: 50,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(
+                            height: 6,
+                          ),
+                          Center(child: const Text("The American West"))
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            const Align(
+              alignment: Alignment.bottomLeft,
+              child: Padding(
+                padding: EdgeInsets.only(right: 10, left: 10),
+                child: Text(
+                  "FEATURED",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 25),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            SizedBox(
+              height: 100,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(right: 14, left: 14),
+                    child: Container(
+                      width: 150,
+                      decoration: BoxDecoration(
+                        color: const Color(0xff7c94b6),
+                        border: Border.all(
+                          width: 2,
+                        ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/praia.jpeg",
+                            width: 100,
+                            height: 50,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(
+                            height: 6,
+                          ),
+                          Center(child: const Text("Tropical Beaches"))
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(right: 14, left: 14),
+                    child: Container(
+                      width: 150,
+                      decoration: BoxDecoration(
+                        color: const Color(0xff7c94b6),
+                        border: Border.all(
+                          width: 2,
+                        ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/linear perspective.jpeg",
+                            width: 100,
+                            height: 50,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(
+                            height: 6,
+                          ),
+                          Center(child: const Text("Tropical Beaches"))
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(right: 14, left: 14),
+                    child: Container(
+                      width: 150,
+                      decoration: BoxDecoration(
+                        color: const Color(0xff7c94b6),
+                        border: Border.all(
+                          width: 2,
+                        ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/reflection.jpeg",
+                            width: 100,
+                            height: 50,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(
+                            height: 6,
+                          ),
+                          Center(child: const Text("Tropical Beaches"))
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(right: 14, left: 14),
+                    child: Container(
+                      width: 150,
+                      decoration: BoxDecoration(
+                        color: const Color(0xff7c94b6),
+                        border: Border.all(
+                          width: 2,
+                        ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/cristo redentor.jpeg",
+                            width: 100,
+                            height: 50,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(
+                            height: 6,
+                          ),
+                          Center(child: const Text("Tropical Beaches"))
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(right: 14, left: 14),
+                    child: Container(
+                      width: 150,
+                      decoration: BoxDecoration(
+                        color: const Color(0xff7c94b6),
+                        border: Border.all(
+                          width: 2,
+                        ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/us west.jpeg",
+                            width: 100,
+                            height: 50,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(
+                            height: 6,
+                          ),
+                          Center(child: const Text("The American West"))
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            const Align(
+              alignment: Alignment.bottomLeft,
+              child: Padding(
+                padding: EdgeInsets.only(right: 10, left: 10),
+                child: Text(
+                  "FEATURED",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 25),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            SizedBox(
+              height: 100,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(right: 14, left: 14),
+                    child: Container(
+                      width: 150,
+                      decoration: BoxDecoration(
+                        color: const Color(0xff7c94b6),
+                        border: Border.all(
+                          width: 2,
+                        ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/praia.jpeg",
+                            width: 50,
+                            height: 50,
+                            fit: BoxFit.cover,
+                          ),
+                          Center(child: const Text("Tropical Beaches"))
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(right: 14, left: 14),
+                    child: Container(
+                      width: 150,
+                      decoration: BoxDecoration(
+                        color: const Color(0xff7c94b6),
+                        border: Border.all(
+                          width: 2,
+                        ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/praia.jpeg",
+                            width: 50,
+                            height: 50,
+                            fit: BoxFit.cover,
+                          ),
+                          Center(child: const Text("Tropical Beaches"))
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(right: 14, left: 14),
+                    child: Container(
+                      width: 150,
+                      decoration: BoxDecoration(
+                        color: const Color(0xff7c94b6),
+                        border: Border.all(
+                          width: 2,
+                        ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/praia.jpeg",
+                            width: 50,
+                            height: 50,
+                            fit: BoxFit.cover,
+                          ),
+                          Center(child: const Text("Tropical Beaches"))
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(right: 14, left: 14),
+                    child: Container(
+                      width: 150,
+                      decoration: BoxDecoration(
+                        color: const Color(0xff7c94b6),
+                        border: Border.all(
+                          width: 2,
+                        ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/praia.jpeg",
+                            width: 50,
+                            height: 50,
+                            fit: BoxFit.cover,
+                          ),
+                          Center(child: const Text("Tropical Beaches"))
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(right: 14, left: 14),
+                    child: Container(
+                      width: 150,
+                      decoration: BoxDecoration(
+                        color: const Color(0xff7c94b6),
+                        border: Border.all(
+                          width: 2,
+                        ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/us west.jpeg",
+                            width: 50,
+                            height: 50,
+                            fit: BoxFit.cover,
+                          ),
+                          Center(child: const Text("The American West"))
+                        ],
+                      ),
                     ),
                   ),
                 ],
