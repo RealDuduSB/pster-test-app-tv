@@ -1,41 +1,41 @@
 {
   "project_info": {
-    "project_number": "796660094509",
-    "project_id": "pster-7d618",
-    "storage_bucket": "pster-7d618.appspot.com"
+    "project_number": "815245715374",
+    "project_id": "pster-503a9",
+    "storage_bucket": "pster-503a9.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:796660094509:android:7fe79c99d621e49edbcaa4",
+        "mobilesdk_app_id": "1:815245715374:android:9e0e52a614ca79bc72ca3f",
         "android_client_info": {
-          "package_name": "com.company.pster"
+          "package_name": "com.example.test_app_tv"
         }
       },
       "oauth_client": [
         {
-          "client_id": "796660094509-brd5bao94et5u88tp98ka6q7n0v9kfl4.apps.googleusercontent.com",
+          "client_id": "815245715374-o3oeer6gdiknloeo8qikgeu81aheumra.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.company.pster",
+            "package_name": "com.example.test_app_tv",
             "certificate_hash": "c2a010721fa4cf29be1f2b23605af4aa3cd55f7c"
           }
         },
         {
-          "client_id": "796660094509-depu3s5c6csa5aq4ar7nrn1hi9d1civi.apps.googleusercontent.com",
+          "client_id": "815245715374-ahn1sbdfh9id1rjgk7tgk0jnha795jn8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDA4QLW2Y9n7SR264MN4dFWxX4CyqL1SkI"
+          "current_key": "AIzaSyB2O_FqPM9hup46pNCXl53gzG8DEHBT740"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "796660094509-depu3s5c6csa5aq4ar7nrn1hi9d1civi.apps.googleusercontent.com",
+              "client_id": "815245715374-ahn1sbdfh9id1rjgk7tgk0jnha795jn8.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
